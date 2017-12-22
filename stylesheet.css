@@ -1,0 +1,151 @@
+header p{
+  display:inline;
+  font-size:12px;
+}
+header li{
+  display:table-cell;
+}
+#small_botton,#middle_botton,#big_botton{
+  background-repeat: no-repeat;
+  background-position=:right bottom;
+  padding:15px 17px 15px 15px;
+}
+#small_botton{
+  background-image:url(images/fontsize_s.png);
+}
+#middle_botton{
+  background-image:url(images/fontsize_m.png);
+}
+#big_botton{
+  background-image:url(images/fontsize_l.png);
+}
+#search_botton{
+  width:28px;
+  height:28px;
+  background:url(images/search_btn.jpg) left top no-repeat;
+  margin:0 0 -10px -5px;
+}
+#search_box{
+  margin:0 0 0 0;
+}
+.list-nav{
+  width:1000px;
+  height:50px;
+  margin:0 auto;
+  display:table;
+}
+.list-nav li{
+  display:table-cell;
+  vertical-align:middle;
+}
+.list-nav a{
+  width:300px; //長さは均等割以上のサイズを指定する。
+  height:50px;
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+  background:#EAEAEA;
+  color:#000;
+  border-bottom:2px solid #1b215c;
+}
+#graphic {
+	width: 650px;
+	height: 300px;
+  margin:0 auto 0 auto;
+}
+#graphic ul {
+	list-style: none;
+	padding-left: 0;
+}
+#graphic ul li {
+	display: none;
+	position: absolute;
+}
+#graphic ul li.now {
+	display: block;
+}
+header,nav,#contents,footer{
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#contents{
+  overflow:hidden;
+}
+header table{
+	border-collapse: collapse;
+	table-layout: fixed;
+  width: 100%;
+}
+#graphic2{
+  background-color : #1b215c;
+  padding:10px 0 0 0;
+  width: 650px;
+  height: 80px;
+  margin:0 auto 0 auto;
+}
+#graphic2 ul{
+margin:0 0 0 -40px;
+}
+#graphic2 ul li{
+  background-repeat: no-repeat;
+  background-position=:right bottom;
+  display:inline-block;
+  list-style-type:none;
+  padding:3px;
+}
+#graphic2 ul li img{
+border: 1px solid #fff;
+}
+#main{
+  width:700px;
+  float:left;
+}
+#sub{
+  float:right;
+}
+.menu-title{
+  color: #fff;
+  background-color: #1b215c;
+  height:40px;
+  border-top-right-radius:5px;
+  border-top-left-radius:5px;
+  padding-left:20px;
+}
+#graphic3 table{
+  width:700px;
+	border: 2px solid #1b215c;
+  border-top-right-radius:10px;
+  border-top-left-radius:10px;
+  margin-bottom:20px;
+  table-layout:fixed;
+}
+.koumoku td{
+  padding:10px 0 20px 50px;
+}
+.koumoku td a{
+  text-decoration:none;
+  color: #1b215c;
+}
+#pickup {
+  width:652px;
+  text-align: center;
+  border:2px solid #1b215c;
+  margin:0 auto 30px auto;
+}
+#graphic4 table{
+  width:240px;
+	border: 2px solid #1b215c;
+  margin-bottom:20px;
+  padding-bottom:10px;
+}
+#graphic4 table td{
+  text-align: center;
+  vertical-align: center;
+}
+.menu-title2{
+  color: #fff;
+  background-color: #1b215c;
+  height:40px;
+  font-size:18px;
+}
