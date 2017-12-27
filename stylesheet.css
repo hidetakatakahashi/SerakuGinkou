@@ -25,17 +25,16 @@ header table{
 header table td:nth-child(2) img{
   margin-top:30px;
 }
-#botton{
+.botton{
   text-align:center;
 }
-
-#search_botton{
+.search_botton{
   width:28px;
   height:28px;
   background:url(images/search_btn.jpg) left top no-repeat;
   margin:0 0 -9px -6px;
 }
-#topmenu{
+.topmenu{
   width:auto;   /*メニュー全体の幅*/
   height:40px;
   margin:10px auto 10px auto;
@@ -110,17 +109,17 @@ header table td:nth-child(2) img{
   text-align:center;/*中央寄せ*/ */
   background-position:0 -40px;
 }
-.graphic {
+#graphic {
 	width: 650px;
 	height: 300px;
   margin:0 auto 0 auto;
 }
-header,#contents,footer{
+header,.contents,footer{
 	width:940px;
 	margin-left:auto;
 	margin-right:auto;
 }
-#contents{
+.contents{
   overflow:hidden;
 }
 header table{
@@ -128,7 +127,7 @@ header table{
 	table-layout: fixed;
   width: 100%;
 }
-#graphic2{
+.graphic2{
   background-color : #1b215c;
   padding:10px 0 0 0;
   width: 650px;
@@ -136,21 +135,21 @@ header table{
   margin:0 auto 0 auto;
 }
 
-#graphic2 ul li{
+.graphic2 ul li{
   background-repeat: no-repeat;
   background-position=:right bottom;
   display:inline-block;
   list-style-type:none;
   padding:3px;
 }
-#graphic2 ul li img{
+.graphic2 ul li img{
 border: 2px solid #fff;
 }
-#main{
+.main{
   width:680px;
   float:left;
 }
-#sub{
+.sub{
   float:right;
 }
 .menu-title{
@@ -161,7 +160,7 @@ border: 2px solid #fff;
   border-top-left-radius:5px;
   padding-left:20px;
 }
-#graphic3 table{
+.graphic3 table{
   /* width:680px; */
 	border: 2px solid #1b215c;
   border-top-right-radius:10px;
@@ -188,21 +187,21 @@ border: 2px solid #fff;
 .koumoku td a img{
   padding-right:5px;
 }
-#pickup {
+.pickup {
   width:650px;
   height:390px;
   text-align: center;
   border:2px solid #1b215c;
   margin:0 auto 20px auto;
 }
-#graphic4 table{
+.graphic4 table{
   width:240px;
 	border: 2px solid #1b215c;
   margin-bottom:20px;
   padding-bottom:10px;
   border-spacing: 0;
 }
-#graphic4 table td{
+.graphic4 table td{
   text-align: center;
   vertical-align: center;
 }
@@ -212,16 +211,16 @@ border: 2px solid #fff;
   height:40px;
   font-size:18px;
 }
-#tab{
+.tab{
   width:680px;
 }
-#tab ul{
+.tab ul{
   font-size:0;
 }
-#tab ul li{
+.tab ul li{
   display: table-cell;
 }
-#tab-body{
+.tab-body{
   border-width: 0px 0.5px 0.5px 0.5px;
   border-style: solid;
   border-color: #5a5a5a;
@@ -281,18 +280,18 @@ footer p{
   color:#fff;
   text-align:center;
 }
-#footer-menu{
+.footer-menu{
   width:auto;
   height:50px;
   background-color:#ebebf3;
   margin:80px auto 40px auto;
 }
-#footer-menu ul {
-  width:945px;
-  margin:0px auto 0 auto;
+.footer-menu ul {
+  width:900px;
+  margin:0 auto 0 auto;
   font-size:0;
 }
-#footer-menu ul li{
+.footer-menu ul li{
   padding:0 10px 0 10px;
   margin:15px auto 0 auto;
   display:inline-block;
@@ -302,9 +301,13 @@ footer p{
   /* border-color: #5a5a5a; */
   text-align: center;
   font-size:12px;
-  color:#83c8d8;
 }
-#footer-menu ul li:first-child{
+.footer-menu ul li a{
+  color:#83c8d8;
+  text-decoration: none;
+  font-size:12px;
+}
+.footer-menu ul li:first-child{
   border-width: 0px 0.5px 0px 0.5px;
   border-style: solid;
   border-color: #acabb0;

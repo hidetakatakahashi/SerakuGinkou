@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>せらく銀行</title>
-  <!-- <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"> -->
   <link rel="stylesheet" href="stylesheet.css">
   <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="jquery.bgswitcher.js"></script>
   <script type="text/javascript" src="javascript.js"></script>
-
-	<link href="ui.tabs.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <header>
@@ -31,7 +28,7 @@
         </td>
       </tr>
       <tr>
-        <td id="botton">
+        <td class="botton">
           <div>
             <a onclick="smaller()"><img src="images/fontsize_s.png" onMouseOver="src='images/fontsize_s_on.png'" onMouseOut="src='images/fontsize_s.png'"></img></a>
             <a onclick="middle()"><img src="images/fontsize_m.png" onMouseOver="src='images/fontsize_m_on.png'" onMouseOut="src='images/fontsize_m.png'"></img></a>
@@ -41,7 +38,7 @@
         <td>
           <form id="search_box" action="cgi-bin/example.cgi" method="post">
             <input type="search" name="search" placeholder="検索ワードを入力">
-            <input id="search_botton" type="image" name="submit" value="">
+            <input class="search_botton" type="image" name="submit" value="">
           </form>
         </td>
       </tr>
@@ -50,7 +47,7 @@
 
 <!-- ナビ -->
 
-  <nav id="topmenu">
+  <nav class="topmenu">
     <ul class="list-nav">
       <li><a href="dummy.html">個人のお客様</a></li>
       <li><a href="dummy.html">法人のお客様</a></li>
@@ -62,20 +59,21 @@
 
 <!-- メイン -->
 
-  <div id="contents">
-    <div id="main">
-      <div id="pickup">
-        <div class="graphic">
+  <div class="contents">
+    <div class="main">
+      <div class="pickup">
+        <div id="graphic">
+          <img id="changeGraphic"></img>
         </div>
-        <div id="graphic2" >
+        <div class="graphic2" >
           <ul>
-            <li><a onclick="photoChange()"><img src="images/thum_1.jpg" alt="せらく銀行" class="image1"></a></li>
-            <li><a onclick="photoChange()"><img src="images/thum_2.jpg" alt="外貸自動積立サービス" class="image2"></a></li>
-            <li><a onclick="photoChange()"><img src="images/thum_3.jpg" alt="せらく銀行カードローン" class="image3"></a></li>
+            <li><a onclick="photoChange('images/new1.jpg')"><img src="images/thum_1.jpg" alt="せらく銀行" class="image1"></a></li>
+            <li><a onclick="photoChange('images/new2.jpg')"><img src="images/thum_2.jpg" alt="外貸自動積立サービス" class="image2"></a></li>
+            <li><a onclick="photoChange('images/new3.jpg')"><img src="images/thum_3.jpg" alt="せらく銀行カードローン" class="image3"></a></li>
           </ul>
         </div>
       </div>
-      <div id="graphic3">
+      <div class="graphic3">
         <table>
             <tr>
               <td class="menu-title" colspan="3">個人のお客様</td>
@@ -96,7 +94,7 @@
             </tr>
         </table>
       </div>
-      <div id="graphic3">
+      <div class="graphic3">
         <table>
           <tr>
             <td class="menu-title" colspan="3">法人のお客様</td>
@@ -117,7 +115,7 @@
           </tr>
         </table>
       </div>
-      <div id="graphic3">
+      <div class="graphic3">
         <table>
           <tr>
             <td class="menu-title" colspan="3">株主・投資家の皆様</td>
@@ -134,7 +132,7 @@
           </tr>
         </table>
       </div>
-      <div id="graphic3">
+      <div class="graphic3">
         <table>
           <tr>
             <td class="menu-title" colspan="3">採用情報</td>
@@ -155,14 +153,14 @@
 
 <!-- タブ -->
 
-      <div id="tab">
+      <div class="tab">
         <ul>
           <li><a href="#tabpage1" class="ChangeElem_Btn" id="tab1"><img src="images/tab01_on.png"></img></a></li>
           <li><a href="#tabpage1" class="ChangeElem_Btn" id="tab2"><img src="images/tab02_off.png"></img></a></li>
           <li><a href="#tabpage1" class="ChangeElem_Btn" id="tab3"><img src="images/tab03_off.png"></img></a></li>
           <li><a href="#tabpage1" class="ChangeElem_Btn" id="tab4"><img src="images/tab04_off.png"></img></a></li>
         </ul>
-        <div id="tab-body">
+        <div class="tab-body">
           <div class="ChangeElem_Panel">
             <table>
               <tr>
@@ -276,8 +274,8 @@
 
 <!-- サブ -->
 
-    <div id="sub">
-      <div id="graphic4">
+    <div class="sub">
+      <div class="graphic4">
         <table>
           <tr>
             <th class="menu-title2"><img src="images/internet_banking.png"></img></th>
@@ -300,7 +298,7 @@
           </tr>
         </table>
       </div>
-      <div id="graphic4">
+      <div class="graphic4">
         <table>
           <tr>
             <th class="menu-title2">サービスのご案内</th>
@@ -435,13 +433,13 @@
         </td>
       </tr>
     </table>
-    <div id="footer-menu">
+    <div class="footer-menu">
       <ul>
-        <li>お客様の個人情報保護について</li>
-        <li>金融商品勧誘方針</li>
-        <li>法人等のお客様の情報について</li>
-        <li>本サイトのご利用にあたって</li>
-        <li>反社会的勢力に対する基本方針</li>
+        <li><a href="dummy.html">お客様の個人情報保護について</a></li>
+        <li><a href="dummy.html">金融商品勧誘方針</a></li>
+        <li><a href="dummy.html">法人等のお客様の情報について</a></li>
+        <li><a href="dummy.html">本サイトのご利用にあたって</a></li>
+        <li><a href="dummy.html">反社会的勢力に対する基本方針</a></li>
       </ul>
     </div>
     <p>Copyright&copy2015 Seraku Banking Corporation.All Rights Reserved.</p>

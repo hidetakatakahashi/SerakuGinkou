@@ -4,7 +4,7 @@ function middle()  { document.body.style.fontSize = 100 + '%'; }
 function smaller() { document.body.style.fontSize = 80 + '%'; }
 
 jQuery(function($) {
-    $('.graphic').bgSwitcher({
+    $('#graphic').bgSwitcher({
         images: ['images/new1.jpg','images/new2.jpg','images/new3.jpg'], // 切替背景画像を指定
 	      interval: 3000, // 背景画像を切り替える間隔を指定 3000=3秒
         loop: true, // 切り替えを繰り返すか指定 true=繰り返す　false=繰り返さない
@@ -70,3 +70,7 @@ $('.ChangeElem_Btn').each(function () {
   });
 });
 });
+
+function photoChange(img){
+  document.getElementById("changeGraphic").src=img;
+}
